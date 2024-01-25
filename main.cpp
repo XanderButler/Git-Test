@@ -8,15 +8,25 @@ int sum(int n) {
     return result;
 }
 
+int product(int n) {
+    int result = 1;
+    for (int i = 1; i <= n; ++i) {
+        result *= i;
+    }
+    return result;
+}
+
 int main() {
     std::cout << "Hello, World!" << std::endl;
-    
+
     std::cout << "Enter a number, n: ";
-    
+
     int n;
     std::cin >> n;
 
     std::cout << "Sum of numbers from 1 to " << n << ": " << sum(n) << std::endl;
+
+    std::cout << "Product of numbers from 1 to " << n << ": " << product(n) << std::endl;
 
     return 0;
 }
